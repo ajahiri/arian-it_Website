@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+  head
+    title AIT Annulus Share Project
+    include ../imports/head-reusable
+    //Import Local CSS stylesheet
+    link(rel="stylesheet" href="/css/main-styles.css")
+    // Import Google Icon Font
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    // Compiled and minified CSS
+    include ../imports/cssLibraries
+  
+  body
+    // Header with main navigation and landing overlay
+    #header.header.standardHeader
+      // MENU
+      #main-navigation.main-navigation.revealNavigation
+        include ../imports/navigation
+    include ../imports/mobile-navigation
+    
+    // Content starts here
+    #page-content
+      .container
+        .row
+          .section.col.s12
+            h3 Annulus Share | Photography Platform
+            img.responsive-img(src="/projects/annulus_share/fullscreenBackground.png" alt="Annulus Share Website Background")
+          .divider  
+          .section.col.s12
+            h3 Portfolio
+            p
+              | The following PDF explains and showcases the design and production process as well as research and many other topics, take a look for yourself.
+            .col.s12
+              .video-container
+                iframe(src="/ViewerJS/#../projects/annulus_share/annulus-share_portfolio.pdf" width="100%" height="100%" allowfullscreen="" webkitallowfullscreen="")
+
+    // Start footer content
+    #page-footer(style="margin-top:30vh;")
+      include ../imports/footer-content
+    
+    // Compiled and minified Materialize library
+    include ../imports/jsLibraries
+    script(type="text/javascript" src="/scripts/main.js")

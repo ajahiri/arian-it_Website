@@ -1,0 +1,108 @@
+doctype html
+html(lang="en")
+  head
+    title AIT Home | Portfolio
+    include imports/head-reusable
+    //Import Local CSS stylesheet
+    link(rel="stylesheet" href="css/main-styles.css")
+    // Import Google Icon Font
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    // Compiled and minified CSS
+    include imports/cssLibraries
+    meta(name="description" content="This is my personal site/portfolio where I write about my projects, thoughts and opinions.")
+  
+  body
+    include imports/mobile-navigation
+    
+    // Header with main navigation and landing overlay
+    #header.header
+      // MENU
+      #main-navigation.main-navigation
+        include imports/navigation
+    
+      //Welcome Overlay
+      #welcome-overlay
+        img#landing-ait-logo.landing-ait-logo(src="images/logo.png" alt="arian-it logo")
+        h1#landing-logo-text.landing-logo-text Arian's Portfolio
+        a#landingDismiss.waves-effect.waves-light.grey.darken-3.btn(style="margin-top: 10px;") ENTER
+        
+    
+          
+        
+    
+    // Content starts here
+    #page-content.hideContent
+      .container
+        // Philosophy content
+        .row.section
+          .grid.col.s12
+            h3 My Philosophy
+            .section.col.s12.m4
+              .center-align
+                i.large.material-icons thumbs_up_down
+                h5 Feedback
+                p
+                  | Constructive criticism is always appretiated, the only way for me or my work to improve is to collect feedback. If you have anything you would like to say, do so at the 
+                  a(href="contact.html") contact 
+                  | page.
+            .section.col.s12.m4
+              .center-align
+                i.large.material-icons supervisor_account
+                h5 For the People
+                p
+                  | My ultimate goal is to write programs and services that will help people.
+            .section.col.s12.m4
+              .center-align
+                i.large.material-icons fast_forward
+                h5 To-the-Point
+                p "Talk is cheap, show me the code." - Linus Torvalds. I don't like to waste time.
+        .divider
+          
+        #studentvoiceContent.row.section
+          .col.s12
+            h3 Major Projects
+            .col.s12
+              h4 Annulus Share
+              .col.s12.m4
+                img.responsive-img(src="images/annulussharelogo.png" alt="Annulus Share Application Logo" style="float:left; padding-right: 2em; padding-bottom: 1em;")
+              .col.s12.m8
+                p
+                  | Annulus Share is a personal project to build a social platform as my HSC major project for the IT Multimedia course. Developed using the MeteorJS full-stack framework that features live DOM updates straight from the database. 
+                  | The platform enables photography beginners, enthusiasts, and professionals to explore photography, learn from others, and share their work. Every photo contains metadata that is shared among users and is automatically extracted from each uploaded image. This platform give users the freedom to share their work as well as their methods and techniques.
+                br
+                p
+                  | The project has since completed development and an  
+                  a(href="https://play.google.com/store/apps/details?id=com.annulus_studios.annulus_share&hl=en" target="_blank") Android application 
+                  | was also developed, although I have recently decided to pull down the servers due to ongoing costs.  
+                br
+                p 
+                  | Learn more about Annulus Share 
+                  a(href="projects/annulus-share.html") here
+                  | .
+                          
+            .col.s12.divider
+            
+            .col.s12
+              h4 Student Voice
+              .col.s12.m4
+                img.responsive-img(src="images/icon.png" alt="Student Voice Application Logo" style="float:left; padding-right: 2em;")
+              .col.s12.m8
+                p
+                  | Student Voice is an application designed and developed by
+                  a(href="https://halfbeardstudios.com/") "Halfbeard Studios"
+                  | . The application was designed to give students the freedom to communicate with their superiors without face-to-face contact. This concept eliminates the fear of reporting issues to superiors and allows students to speak their mind. This was the first application our team had built so we were unfamiliar with the application environment and unaware of the design challenges for mobile. 
+                br
+                p 
+                  | We used 
+                  a(href="http://phonegap.com/" target="_blank") "Adobe PhoneGap Build" 
+                  |  with 
+                  a(href="https://cordova.apache.org/" target="_blank") "Cordova" 
+                  |  to compile and build the application for Android and later, Apple. Development was difficult but a successful learning process. More information about my contributions to Student Voice can be found in the Projects tab.
+    // Start footer content
+    #page-footer.hideContent
+      include imports/footer-content
+    
+    // Compiled and minified Materialize library
+    include imports/jsLibraries
+    script(type="text/javascript" src="./scripts/landingPage.js")
+    script(type="text/javascript" src="./scripts/main.js")

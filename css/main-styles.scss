@@ -1,0 +1,55 @@
+@import "body-css.scss";
+@import "navigation-css.scss";
+@import "landing-css.scss";
+@import "mobile-navigation.scss";
+@import "footer-css.scss";
+
+.hideContent {
+	opacity: 0;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	visibility: hidden;
+  display: none;
+}
+
+p {
+	padding-bottom: 15px;
+}
+
+//For small displays..
+/* WHEN VIEWPORT IS LESS <=685px THE NAVGROUP WILL DISSAPEAR AND THE CONDENSED MENU BUTTON WILL APPEAR */
+@media (max-width: 685px) {
+	.header {
+		background-image:url("../images/background-header-mobile.png");
+	}
+	.navigation-button-group {
+		opacity: 0;
+		transition: all 0.5 ease;;
+		-webkit-transition: all 0.5 ease;
+		-moz-transition: all 0.5 ease;
+		-o-transition: all 0.5 ease;
+		display: none;
+	}
+	.condensed-menu-button {
+		opacity: 1;
+		transition: all 0.5 ease;;
+		-webkit-transition: all 0.5 ease;
+		-moz-transition: all 0.5 ease;
+		-o-transition: all 0.5 ease;
+		display: inline;
+		float: left;
+		margin-left: 10px;
+		height: 70px;
+	}
+	.menu-button-image{
+		float: left;
+		height: 70px;
+		width: 55px;
+	}
+	.condensed-menu-button p {
+		float: left;
+		padding-top: 25px;
+	}
+}

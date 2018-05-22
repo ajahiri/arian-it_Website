@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+  head
+    title AIT Contact
+    include imports/head-reusable
+    //Import Local CSS stylesheet
+    link(rel="stylesheet" href="css/main-styles.css")
+    // Import Google Icon Font
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    // Compiled and minified CSS
+    include imports/cssLibraries
+  
+  body
+    // Header with main navigation and landing overlay
+    #header.header.standardHeader
+      // MENU
+      #main-navigation.main-navigation.revealNavigation
+        include imports/navigation
+    include imports/mobile-navigation
+    
+    // Content starts here
+    #page-content
+      .container.contact
+        h3 Contact
+        h6
+          | The following form will contact me directly.
+        .divider
+        .row
+          .col.s12.m6.l6
+            .row
+              form.col.s12(action="https://formspree.io/ajahiri9@protonmail.com" method="POST")
+                .row
+                  .input-field.col.s12
+                    input#full-name.validate(type="text" name="name")
+                    label(for="name") Name
+                .row
+                  .input-field.col.s12
+                    input#email.validate(type="email" name="_replyto")
+                    label(for="email") E-Mail
+                .row
+                  .input-field.col.s12
+                    textarea#message.materialize-textarea(name="message" placeholder="Your Message" required="")
+                    label(for="message") Message
+                button.btn.waves-effect.waves-light(type="submit")
+                  | Submit 
+                  i.mdi-content-send.right
+          .col.s12.m6.l6.contact-holder
+            h5 Email Address (Main Contact)
+            p ajahiri9@protonmail.com
+            h5 Based In
+            p Sydney, Australia
+            h5 Phone Number
+            p +61 481522992
+            h5 Website
+            p www.arian-it.com
+    
+      // Start footer content
+      #page-footer(style="margin-top:30vh;")
+        include imports/footer-content
+      
+      // Compiled and minified Materialize library
+      include imports/jsLibraries
+      script(type="text/javascript" src="./scripts/main.js")

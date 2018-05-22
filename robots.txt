@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /favicon/
+Disallow: /scripts/
+Disallow: /ViewerJS/

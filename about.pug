@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+  head
+    title AIT About
+    include imports/head-reusable
+    //Import Local CSS stylesheet
+    link(rel="stylesheet" href="css/main-styles.css")
+    // Import Google Icon Font
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    // Compiled and minified CSS
+    include imports/cssLibraries
+  
+  body
+    // Header with main navigation and landing overlay
+    #header.header.standardHeader
+      // MENU
+      #main-navigation.main-navigation.revealNavigation
+        include imports/navigation
+    include imports/mobile-navigation
+    
+    // Content starts here
+    #page-content
+      .container
+        .row
+          .col.s12
+            h3 About
+            .card.col
+              .card-content
+                .col.m4.s12(style="padding-bottom:15px;")
+                  img(alt="Arian-IT logo." src="images/logo.png").responsive-img
+                .col.m8.s12(style="padding-bottom:15px;")
+                  p My name is Arian Jahiri and I'm a university student with a strong passion for technology and software. I've always had a strong interest in programming, computer networking, and web development. I am currently undergoing a Bachelor's of Software Engineering degree at the University of Technology Sydney. This is my personal site where I write about my projects, thoughts and opinions.
+                
+    // Start footer content
+    #page-footer(style="margin-top:20vh;")
+      include imports/footer-content
+      
+    // Compiled and minified Materialize library
+    include imports/jsLibraries
+    script(type="text/javascript" src="./scripts/main.js")

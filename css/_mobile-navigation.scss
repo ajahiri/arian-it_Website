@@ -1,0 +1,81 @@
+/* MOBILE HEADER/NAVIGATION */
+.condensed-menu-button {
+	opacity: 0;
+	transition: all 0.5 ease;;
+	-webkit-transition: all 0.5 ease;
+	-moz-transition: all 0.5 ease;
+	-o-transition: all 0.5 ease;
+	display: none;
+	float: left;
+	margin-left: 10px;
+	margin-top: 6px;
+}
+
+.navigation-buttons-condensed {
+	position: absolute;
+	visibility: hidden;
+	pointer-events: none;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s ease, opacity 0.5s ease;
+	-webkit-transition: all 0.5s ease, opacity 0.5s ease;
+	-moz-transition: all 0.5s ease, opacity 0.5s ease;;
+	-o-transition: all 0.5s ease, opacity 0.5s ease;
+	z-index: 9;
+}
+
+.nav-group-condensed-active {
+	position: fixed;
+	opacity: 1;
+	transition: all 0.5s ease, opacity 0.5s ease;
+	-webkit-transition: all 0.5s ease, opacity 0.5s ease;
+	-moz-transition: all 0.5s ease, opacity 0.5s ease;
+	-o-transition: all 0.5s ease, opacity 0.5s ease;;
+	visibility: visible;
+	z-index: 20;
+	pointer-events: auto;
+}
+
+.nav-group-condensed-menu {
+	width: 60%;
+	height: 100%;
+	background-color: #FFFFFF;
+	float: left;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	visibility: visible;
+	z-index: 20;
+}
+.nav-group-condensed-items {
+	float: left;
+	margin-left: 5%;
+	margin-top: 10%;
+	width: 90%;
+}
+
+.nav-group-condensed-item-buttons {
+	padding-top: 5%;
+	width: 100%;
+}
+
+.nav-group-condensed-item-button-links {
+	width: 100%;
+}
+
+.nav-group-condensed-shadow {
+	width: 40%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0.5;
+	float: right;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	visibility: visible;
+}
+
+/* END MOBILE NAVIGATION/HEADER CSS */
