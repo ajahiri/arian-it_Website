@@ -1,3 +1,3 @@
-# arian-it_Website
+# Web Portfolio
 
-##This is the repo for the www.arian-it.com website.
+##Repository for static web portfolio.
